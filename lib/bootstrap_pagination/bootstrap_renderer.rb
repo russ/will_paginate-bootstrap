@@ -59,7 +59,7 @@ module BootstrapPagination
     end
 
     def ul_class
-      @options[:class]
+      @options[:class].blank? ? "pagination" : @options[:class]
     end
   end
 end
